@@ -1,12 +1,12 @@
 import "./App.css";
 
 function App() {
-  var name = "ali";
-  var age = 12;
+  var name = <h1>Ali</h1>;
+  var age = <h1>12</h1>;
   return (
     <div>
-      <h1>{name}</h1>
-      <h1>{age}</h1>
+      {name}
+      {age}
     </div>
   );
 }
