@@ -3,10 +3,21 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <User name="ali" age={12} email="ali@test.com" />
+      <User name={12} age="Programmer" email="oracle" />
+      <Job salary={12} position="Programmer" company="oracle" />
     </div>
   );
 }
+
+const Job = (props) => {
+  return (
+    <div>
+      <h1>{props.position}</h1>
+      <h1>{props.company}</h1>
+      <h1>{props.salary}</h1>
+    </div>
+  );
+};
 
 const User = (props) => {
   return (
@@ -17,5 +28,6 @@ const User = (props) => {
     </div>
   );
 };
+
 
 export default App;
